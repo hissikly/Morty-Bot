@@ -3,7 +3,6 @@ import datetime
 import os
 from dotenv import load_dotenv
 from sqlalchemy import String, Integer, Text, TIMESTAMP
-import asyncio
 
 load_dotenv()
 pg_manager = DatabaseManager(db_url=os.getenv("PG_DOCKER"), deletion_password=os.getenv("PG_PASS"))

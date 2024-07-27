@@ -86,7 +86,7 @@ async def save_genrated_image(img_uuid):
 
     response = requests.request("GET", url, headers=headers, stream=True)
 
-    with open('image/img.jpg', 'wb') as out_file:
+    with open('static/img.jpg', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
     del response
 
