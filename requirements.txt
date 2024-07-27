@@ -1,0 +1,14 @@
+requests
+asyncio
+aiogram
+transformers
+pip-system-certs
+gigachain
+gigachain-cli
+gigachain_core
+gigachain_community
+gigachain_experimental
+asyncpg-lite
+python-dotenv
+python-decouple
+asyncpg
