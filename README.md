@@ -3,4 +3,4 @@
 - использует GigaChat API 
 - использует PostgreSQL для хранения контекста
 
-[text](static/MortyBot.pdf)
+[text](static/MortyBot.pdf)"# Morty-Bot" 
