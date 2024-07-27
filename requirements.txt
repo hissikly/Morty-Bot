@@ -11,4 +11,3 @@ gigachain_experimental
 asyncpg-lite
 python-dotenv
 python-decouple
-asyncpg

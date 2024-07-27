@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from sqlalchemy import String, Integer, Text, TIMESTAMP
 
 load_dotenv()
-pg_manager = DatabaseManager(db_url=os.getenv("PG_DOCKER"), deletion_password=os.getenv("PG_PASS"))
+pg_manager = DatabaseManager(db_url=os.getenv("PG_URL"), deletion_password=os.getenv("PG_PASS"))
 
 
 async def create_table_users(table_name="user_message"):

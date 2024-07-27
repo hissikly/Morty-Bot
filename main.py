@@ -34,7 +34,7 @@ async def get_image_rate(mes: types.Message, state: FSMContext):
     await mes.answer("Запускаю генерацию изображения...")
 
     answer_title = await chat_model.get_image_by_gigachat(mes)
-    await mes.answer_photo(photo=FSInputFile("image/img.jpg", "image"), caption=answer_title)
+    await mes.answer_photo(photo=FSInputFile("static/img.jpg", "image"), caption=answer_title)
     await state.clear()
 
 

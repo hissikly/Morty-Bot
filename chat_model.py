@@ -62,7 +62,7 @@ async def get_payload_headers(message: types.Message):
     "messages": [
             {
                 "role": "system", 
-                "content": "нарисуй" + message.text
+                "content": "Хочу чтобы на картинке был" + message.text
             }
         ]
     })
