@@ -22,6 +22,11 @@ class ImageRate(StatesGroup):
     image_rate = State()
 
 
+@dp.message(Command("help"))
+async def get_help_command(mes: types.Message):
+    await mes.answer("Генерация изображения по команде /image \n Чтобы общаться с ботом в приватном чате команды не нужны! \n Чтобы общаться с ботом в группе, обращайтесь к нему по имени;)")
+
+
 @dp.message(StateFilter(None), Command("image"))
 async def get_image_command(mes: types.Message, state: FSMContext):
     await mes.answer("Опишите то, что вы хотите увидеть на картинке")
